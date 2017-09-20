@@ -19,6 +19,7 @@ export class AppComponent implements OnInit {
     for(let i = 0; i < 64; i++) {
       this.cells.push({cellStatus: ''});
     }
+    console.log(this.cells);
   }
   
   cellClick(ind:number) {

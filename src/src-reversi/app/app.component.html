@@ -3,7 +3,7 @@
 </h1>
 <div class="board">
   <div *ngFor="let cell of cells" (click)="cellClick($index)">
-    <span [class]="cellStatus"></span>
+    <span [ngClass]="cellStatus"></span>
   </div>
 </div>
 <div class="count">
