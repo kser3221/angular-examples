@@ -1,3 +1,11 @@
 <h1>
   {{title}}
 </h1>
+<div class="board">
+  <div *ngFor="let cell of cells" (click)="cellClick($index)">
+    <span [class]="cellStatus"></span>
+  </div>
+</div>
+<div class="count">
+  <p>흰 : {{white}} / 검 : {{black}}</p>
+</div>
